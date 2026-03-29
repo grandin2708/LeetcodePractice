@@ -16,7 +16,6 @@ public:
         
         vector<int> maxLeft(height.size(), 0);
         vector<int> maxRight(height.size(),0);
-
         vector<int> inds(height.size());
         iota(inds.begin(), inds.end(), 0);
         std::sort(inds.begin(), inds.end(), [&height](int i, int j) {return height[i] > height[j];});
