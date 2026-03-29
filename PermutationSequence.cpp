@@ -21,6 +21,7 @@ public:
 
             k -= num * nextFact;
             assert(num <= n - digit);
+            
             s.push_back(charNums[num]);
             charNums.erase(charNums.begin() + num);
             charNums.shrink_to_fit();
